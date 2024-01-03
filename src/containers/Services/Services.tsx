@@ -1,8 +1,8 @@
 import {useEffect, useState} from 'react';
-import {ICard} from '../types';
-import CardCom from '../components/Card';
+import {ICard} from '../../types';
+import CardCom from '../../components/Card';
 import Box from '@mui/material/Box';
-import {CARDS_SERVICES} from '../constans';
+import {CARDS_SERVICES} from '../../constans';
 import Typography from '@mui/material/Typography';
 
 const Services = () => {
@@ -33,7 +33,7 @@ const Services = () => {
           padding: '10px'
         }}
       >
-        <Typography variant="h6">Услуги понаправлениям</Typography>
+        <Typography variant="h6">Услуги по направлениям</Typography>
         <Box
           component="div"
           sx={{

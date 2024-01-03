@@ -1,11 +1,52 @@
-export const CARDS_SERVICES = [
-  {description: 'Проблема в отношениях с детьми', price: 2000},
-  {description: 'Вредные привычки', price: 5000},
-  {description: 'Проблемы в отношениях', price: 1500},
-  {description: 'Алкоголизм в семье', price: 1000},
-  {description: 'Измены', price: 3500},
-  {description: 'Личностный рост', price: 2500},
-  {description: 'Проблемы с карьерой', price: 2000},
-  {description: 'Детские травмы', price: 4000},
-  {description: 'Посттравматическое стрессовое расстройство (ПТСР)', price: 5500},
+import {ICard} from './types';
+
+export const CARDS_SERVICES: ICard[] = [
+  {
+    id: '1',
+    title: 'Проблема в отношениях с детьми',
+    description: '',
+    price: 2000
+  },
+  {
+    id: '2',
+    title: 'Вредные привычки ',
+    description: '',
+    price: 2000
+  },
+  {
+    id: '3',
+    title: 'Отношения в паре',
+    description: '',
+    price: 2000
+  },
+  {
+    id: '4',
+    title: 'Личностный рост',
+    description: '',
+    price: 2000
+  },
+  {
+    id: '5',
+    title: 'Отсутствие отношений',
+    description: '',
+    price: 2000
+  },
+  {
+    id: '6',
+    title: 'Фобии, страхи, кризисы',
+    description: '',
+    price: 2000
+  },
+  {
+    id: '7',
+    title: 'Психосоматика',
+    description: '',
+    price: 2000
+  },
+  {
+    id: '8',
+    title: 'Деньги и страхи',
+    description: '',
+    price: 2000
+  },
 ]

@@ -6,11 +6,13 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import {ICard} from '../types';
+import {useNavigate} from 'react-router-dom';
 
 interface Props {
   card: ICard;
 }
 const CardCom: React.FC<Props> = ({card}) => {
+  const navigate = useNavigate();
   return (
     <Box sx={{
       width: 300,
@@ -32,14 +34,8 @@ const CardCom: React.FC<Props> = ({card}) => {
             flexGrow: 1
           }}
         >
-          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-            Услуга:
-          </Typography>
           <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
-            {card.description}
-          </Typography>
-          <Typography sx={{ marginTop: 3, fontSize: 14 }} color="text.secondary">
-            Стоимость: <i><b>{card.price} руб.</b></i>
+            {card.title}
           </Typography>
         </CardContent>
         <CardActions
@@ -49,7 +45,11 @@ const CardCom: React.FC<Props> = ({card}) => {
             justifyContent: 'center',
           }}
         >
-          <Button variant="outlined" size="small">Узнать больше</Button>
+          <Button
+            variant="outlined"
+            size="small"
+            onClick={() => navigate(`/services/${card.id}`)}
+          >Узнать больше</Button>
         </CardActions>
       </Card>
     </Box>
