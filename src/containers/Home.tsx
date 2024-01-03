@@ -53,7 +53,7 @@ const Home = () => {
           minWidth: '300px'
         }}
       >
-        <img style={{width: '100%', height: 'auto'}} src="../../public/Koleso720.png" alt="image"/>
+        <img style={{width: '100%', height: 'auto'}} src="./Koleso720.png" alt="image"/>
       </Box>
     </Box>
   );
